@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سیستم مدیریت کتابخانه شخصی</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="logo">
+            📚 کتابخانه من
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="#">خانه</a></li>
+
+                <li><a href="#">کتاب‌ها</a></li>
+
+                <li><a href="#">افزودن کتاب</a></li>
+
+                <li><a href="#">تماس با ما</a></li>
+
+            </ul>
+
+        </nav>
+
+        <button id="loginBtn">
+            ورود
+        </button>
+
+    </header>
+
+
+    <!-- معرفی -->
+
+    <section class="hero">
+
+        <h1>
+            سیستم مدیریت کتابخانه شخصی
+        </h1>
+
+        <p>
+
+            کتاب‌های مورد علاقه خود را مدیریت کنید.
+
+        </p>
+
+    </section>
+
+
+    <!-- فرم -->
+
+    <section class="formSection">
+
+        <h2>
+
+            افزودن کتاب
+
+        </h2>
+
+        <input
+            type="text"
+            id="title"
+            placeholder="نام کتاب">
+
+        <input
+            type="text"
+            id="author"
+            placeholder="نام نویسنده">
+
+        <input
+            type="number"
+            id="pages"
+            placeholder="تعداد صفحات">
+
+        <input
+            type="text"
+            id="genre"
+            placeholder="ژانر">
+
+        <select id="status">
+
+            <option>خوانده شده</option>
+
+            <option>در حال مطالعه</option>
+
+            <option>خوانده نشده</option>
+
+        </select>
+
+        <button id="addBook">
+
+            افزودن کتاب
+
+        </button>
+
+    </section>
+
+
+    <!-- جستجو -->
+
+    <section class="search">
+
+        <input
+            type="text"
+            id="searchBox"
+            placeholder="جستجوی کتاب">
+
+    </section>
+
+
+    <!-- شمارنده -->
+
+    <section class="counter">
+
+        تعداد کتاب‌ها :
+
+        <span id="bookCount">
+
+            4
+
+        </span>
+
+    </section>
+
+
+    <!-- کتاب‌ها -->
+
+    <section
+        id="bookContainer"
+        class="books">
+
+    </section>
+    <div id="clock"></div>
+    <footer>
+
+<p>
+
+© 2026 سیستم مدیریت کتابخانه شخصی
+
+</p>
+
+</footer>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

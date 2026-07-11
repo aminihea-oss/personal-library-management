@@ -1,0 +1,504 @@
+/*=========================
+      تنظیمات کلی
+=========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:tahoma,sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    direction:rtl;
+    transition:.4s;
+}
+
+/*=========================
+        Header
+=========================*/
+
+header{
+
+    background:#1f2937;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 50px;
+
+    flex-wrap:wrap;
+
+}
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:bold;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:20px;
+
+}
+
+nav ul li a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+    color:#38bdf8;
+
+}
+
+header button{
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 20px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+header button:hover{
+
+    background:#1d4ed8;
+
+}
+
+/*=========================
+        Hero
+=========================*/
+
+.hero{
+
+    text-align:center;
+
+    padding:50px;
+
+}
+
+.hero h1{
+
+    color:#1f2937;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    color:#555;
+
+}
+
+/*=========================
+      فرم افزودن کتاب
+=========================*/
+
+.formSection{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 0 15px rgba(0,0,0,.1);
+
+}
+
+.formSection h2{
+
+    margin-bottom:20px;
+
+    color:#2563eb;
+
+}
+
+.formSection input,
+
+.formSection select{
+
+    width:100%;
+
+    margin:10px 0;
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    outline:none;
+
+}
+
+.formSection input:focus,
+
+.formSection select:focus{
+
+    border-color:#2563eb;
+
+}
+
+#addBook{
+
+    width:100%;
+
+    background:#16a34a;
+
+    color:white;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+#addBook:hover{
+
+    background:#15803d;
+
+}
+
+/*=========================
+        Search
+=========================*/
+
+.search{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:30px auto;
+
+}
+
+.search input{
+
+    width:100%;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    border:1px solid #bbb;
+
+}
+
+/*=========================
+      شمارنده
+=========================*/
+
+.counter{
+
+    text-align:center;
+
+    font-size:22px;
+
+    margin:20px;
+
+    font-weight:bold;
+
+}
+
+/*=========================
+       لیست کتاب‌ها
+=========================*/
+
+.books{
+
+    width:90%;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+/*=========================
+        کارت کتاب
+=========================*/
+
+.book{
+
+    width:280px;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 0 15px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.book:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.book h3{
+
+    color:#2563eb;
+
+    margin-bottom:10px;
+
+}
+
+.book p{
+
+    margin:8px 0;
+
+}
+
+.book button{
+
+    width:100%;
+
+    background:#dc2626;
+
+    color:white;
+
+    border:none;
+
+    padding:10px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    margin-top:15px;
+
+}
+
+.book button:hover{
+
+    background:#b91c1c;
+
+}
+
+/*=========================
+      حالت تیره
+=========================*/
+
+.dark{
+
+    background:#111827;
+
+    color:white;
+
+}
+
+.dark header{
+
+    background:#000;
+
+}
+
+.dark .formSection,
+
+.dark .book{
+
+    background:#1f2937;
+
+    color:white;
+
+}
+
+.dark input,
+
+.dark select{
+
+    background:#374151;
+
+    color:white;
+
+    border:none;
+
+}
+
+/*=========================
+      Responsive
+=========================*/
+
+@media(max-width:768px){
+
+header{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+nav ul{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.books{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.formSection{
+
+width:95%;
+
+}
+
+.hero{
+
+padding:30px;
+
+}
+
+}
+
+/*=========================
+      Selector های خواسته شده
+=========================*/
+
+/* Universal */
+*{
+    scroll-behavior:smooth;
+}
+
+/* Element */
+section{
+    margin-bottom:30px;
+}
+
+/* Class */
+.book{
+    overflow:hidden;
+}
+
+/* ID */
+#bookCount{
+    color:red;
+}
+
+/* Descendant */
+header nav a{
+    font-size:18px;
+}
+
+/* Child */
+header>button{
+    font-weight:bold;
+}
+
+/* Group */
+h1,h2,h3{
+    font-family:tahoma;
+}
+
+/* Pseudo */
+button:active{
+    transform:scale(.96);
+}
+#themeBtn{
+
+position:fixed;
+
+left:20px;
+
+bottom:20px;
+
+padding:12px 20px;
+
+background:#2563eb;
+
+color:white;
+
+border:none;
+
+border-radius:10px;
+
+cursor:pointer;
+
+box-shadow:0 0 10px gray;
+
+}
+
+#themeBtn:hover{
+
+background:#1d4ed8;
+
+}
+footer{
+
+margin-top:50px;
+
+background:#1f2937;
+
+color:white;
+
+padding:20px;
+
+text-align:center;
+
+}

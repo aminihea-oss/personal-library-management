@@ -1,0 +1,14 @@
+# فایل‌های سیستم عامل
+.DS_Store
+Thumbs.db
+
+# پوشه VS Code
+.vscode/
+
+# فایل‌های موقت
+*.tmp
+*.log
+
+# پوشه node_modules (در صورت استفاده در آینده)
+node_modules/
+find . -print
